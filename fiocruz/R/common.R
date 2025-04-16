@@ -4,7 +4,7 @@
 # goodness-of-fit statistics, and generates plots for each fitted distribution. Finally, it returns a
 # list of the fitted models and their goodness-of-fit statistics for further analysis.
 
-adjust_distributions <- function(data_numeric, titulo = "Histogram of Data") {
+adjust_distributions <- function(data_numeric, title = "Histogram of Data") {
   library(fitdistrplus)
 
   # Certifies that it is numeric
@@ -12,7 +12,7 @@ adjust_distributions <- function(data_numeric, titulo = "Histogram of Data") {
 
   # Histogram
   hist(data_numeric, breaks = 30, probability = TRUE, 
-       main = titulo, col = "lightblue")
+       main = title, col = "lightblue")
 
   # Fit
   fit_nb <- fitdist(data_numeric, "nbinom")
