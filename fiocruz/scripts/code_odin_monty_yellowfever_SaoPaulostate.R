@@ -36,7 +36,7 @@ library(dust2)
 library(monty)
 
 # Load common functions
-source("../R/common.R")
+source("fiocruz/R/common.R")
 
 sir <- odin2::odin({
   N <- parameter(1000) # In odin2, parameter() is used for inputs where user() was used in odin
@@ -78,7 +78,7 @@ sir <- odin2::odin({
 
 
 # load example data
-data<- read.csv("../data/cases_per_state_pnh_sp_mg_pr.csv", header= TRUE, sep = ",") # this is just example data from the package
+data<- read.csv("fiocruz/data/cases_per_state_pnh_sp_mg_pr.csv", header= TRUE, sep = ",") # this is just example data from the package
 #data <- read.csv(system.file("sir_incidence.csv", package="mcstate")) # this is just example data from the package 
 head(data)
 
