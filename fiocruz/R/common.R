@@ -1,3 +1,8 @@
+# This function adjust_distributions is designed to analyze a numeric dataset by fitting several
+# statistical distributions (Negative Binomial, Binomial, Poisson, and Normal) to the data. It
+# visualizes the data with a histogram, provides summaries of the fitted distributions, calculates
+# goodness-of-fit statistics, and generates plots for each fitted distribution. Finally, it returns a
+# list of the fitted models and their goodness-of-fit statistics for further analysis.
 
 adjust_distributions <- function(data_numeric, titulo = "Histogram of Data") {
   library(fitdistrplus)
