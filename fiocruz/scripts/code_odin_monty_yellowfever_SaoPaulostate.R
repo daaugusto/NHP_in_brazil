@@ -115,8 +115,6 @@ data <- data %>%
 
 results <- adjust_distributions(data$cases, titulo = "Casos SP - Likelihood Fit")
 
-
-
 pars <- list(N = 2000, I0 =1, beta=0.4, gamma = 0.1, rho = 0.1, eta = 10)
 
 # Setting up the model
@@ -269,7 +267,7 @@ names(samples)  # Lista dos elementos dentro de samples
 ########################################################################################################
 
 
-######################### PLOT THE LAST TRAJECTORY OF EACH CHAI N############################
+######################### PLOT THE LAST TRAJECTORY OF EACH CHAIN ############################
 
 library(dplyr)
 library(tidyr)
